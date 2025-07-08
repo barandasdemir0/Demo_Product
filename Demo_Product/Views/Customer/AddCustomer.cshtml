@@ -5,13 +5,16 @@
 }
 
 <form method="post">
-    @Html.Label("Ürün adı")
+    @Html.Label("Müşteri adı")
     @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
     @Html.ValidationMessageFor(x => x.Name)
     <br />
-    @Html.Label("Ürün Fiyatı")
+    @Html.Label("Müşteri Şehri")
     @Html.TextBoxFor(x => x.City, new { @class = "form-control" })
     @Html.ValidationMessageFor(x => x.City)
+    <br />
+    @Html.Label("Meslek Seçiniz")
+    @Html.DropDownListFor(x=> x.JobID,(List<SelectListItem>)ViewBag.v,new{@class = "form-control"})
     <br />
     <button class="btn btn-primary">Müşteri ekle</button>
 

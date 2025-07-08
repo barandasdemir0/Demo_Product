@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Concrete
 {
-    public class Context:DbContext
+    public class Context : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -17,6 +17,7 @@ namespace DataAccessLayer.Concrete
         public DbSet<Product> Products { get; set; } // Product C#daki hali products ise veritabanındaki tablo adı
         public DbSet<Category> Categories { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Job> Jobs { get; set; }
 
     }
 }

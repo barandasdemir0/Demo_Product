@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Abstract
 {
-    public interface ICustomerService:IGenericService<Customer>
+    public interface IJobService:IGenericService<Job>
     {
-        List<Customer> GetCustomersListWithJob();
+       
     }
 }
