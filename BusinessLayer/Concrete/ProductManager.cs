@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class ProductManager : IProductService
+    public class ProductManager : IGenericService<Product>
     {
         IProductDal _productDal;
 

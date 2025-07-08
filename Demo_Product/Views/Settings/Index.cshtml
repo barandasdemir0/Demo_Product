@@ -1,8 +1,31 @@
-﻿
+﻿@model Demo_Product.Models.UserEditViewModel
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_UILayout.cshtml";
 }
 
-<h1>Şifre Sayfası</h1>
+<h1>Profil Bilgileri Düzenleme Sayfası</h1>
+
+<form method="post">
+    @Html.Label("Adınız")
+   <input type="type" asp-for="Name" class="form-control" />
+   <br />
+    @Html.Label("SoyAdınız")
+    <input type="type" asp-for="SurName" class="form-control" />
+    <br />
+    @Html.Label("Mail Adresiniz")
+    <input type="type" asp-for="EMail" class="form-control" />
+    <br />
+    @Html.Label("Cinsiyet")
+    <input type="type" asp-for="Gender" class="form-control" />
+    <br />
+    @Html.Label("Şifre")
+    <input type="type" asp-for="Password" class="form-control" />
+    <br />
+    @Html.Label("Şifre tekrar")
+    <input type="type" asp-for="ConfirmPassword" class="form-control" />
+    <br />
+
+    <button class="btn btn-warning">Değişiklikleri Kaydet</button>
+</form>
 
